@@ -1,0 +1,17 @@
+{
+  "name": "Python Jupyter Example Notebook in DevContainer",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "jupyter-minimal",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers"
+  ],
+
+  "forwardPorts": [8888],
+  
+  "postCreateCommand": "jupyter notebook"
+}

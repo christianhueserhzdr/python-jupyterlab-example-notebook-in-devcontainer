@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python-jupyter-example-notebook-in-devcontainer"
+version = "0.1.0"
+description = "A Python Jupyter Example Notebook in Dev Container"
+authors = ["Christian Hueser <55481699+christianhueserhzdr@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "jupyter_example_notebook"}]
+license = "AGPL-3.0-or-later"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

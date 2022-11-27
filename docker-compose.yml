@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  jupyter-minimal:
+    image: jupyter/minimal-notebook
+    volumes:
+      - type: bind
+        source: ./.jupyter
+        target: /home/jovyan/.jupyter
+      - type: bind
+        source: ./jupyter_example_notebook
+        target: /home/jovyan/work
+    ports:
+      - "8888:8888"
